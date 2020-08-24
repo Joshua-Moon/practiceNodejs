@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Joshua-Moon/practiceNodejs#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "sanitize-html": "^1.27.3"
   }
 }
