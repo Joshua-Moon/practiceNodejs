@@ -5,7 +5,7 @@ var fs = require('fs');
 var qs = require('querystring');
 var bodyParser = require('body-parser');
 var compression = require('compression');
-var helmet = require('helmet')
+var helmet = require('helmet');
 
 var topicRouter = require('./routes/topic');
 var indexRouter = require('./routes/index');
@@ -23,7 +23,7 @@ app.get('*', function(request, response, next) {
     next();
   });
 });
-app.use(helmet())
+app.use(helmet());
 
 app.use('/', indexRouter);
 app.use('/topic', topicRouter);
