@@ -8,6 +8,7 @@ var compression = require('compression');
 var helmet = require('helmet');
 var session = require('express-session');
 var FileStore = require('session-file-store')(session);
+var flash = require('connect-flash');
 
 // 정적인(static) 파일 url로 접근 가능하게 해주는 미들웨어 'public'폴더 안의 static파일 다 가능
 app.use(express.static('public'));
@@ -22,6 +23,12 @@ app.use(session({
   saveUninitialized: true,
   store:new FileStore()
 }));
+
+app.use(flash()); //flash 예제 passport hp에서 참고해봐 우선 지울께
+
+// 자체가 함수여서 이렇게 가능
+var passport = require('./lib/passport')(app);
+
 app.get('*', function(request, response, next) {
   fs.readdir('./data', (error, filelist) => {
     request.list = filelist;
@@ -32,7 +39,7 @@ app.use(helmet());
 
 var indexRouter = require('./routes/index');
 var topicRouter = require('./routes/topic');
-var authRouter = require('./routes/auth');
+var authRouter = require('./routes/auth')(passport);
 
 app.use('/', indexRouter);
 app.use('/topic', topicRouter);
