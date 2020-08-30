@@ -9,6 +9,7 @@ var helmet = require('helmet');
 var session = require('express-session');
 var FileStore = require('session-file-store')(session);
 var flash = require('connect-flash');
+const db = require('./lib/db'); 
 
 // 정적인(static) 파일 url로 접근 가능하게 해주는 미들웨어 'public'폴더 안의 static파일 다 가능
 app.use(express.static('public'));
@@ -30,14 +31,12 @@ app.use(flash()); //flash 예제 passport hp에서 참고해봐 우선 지울께
 var passport = require('./lib/passport')(app);
 
 app.get('*', function(request, response, next) {
-  fs.readdir('./data', (error, filelist) => {
-    request.list = filelist;
+    request.list = db.get('topics').value();
     next();
-  });
 });
 app.use(helmet());
 
-var indexRouter = require('./routes/index');
+var indexRouter = require('./routes/index');  
 var topicRouter = require('./routes/topic');
 var authRouter = require('./routes/auth')(passport);
 

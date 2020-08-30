@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "wPumwLIEb",
+      "email": "ho513@naver.com",
+      "password": "1111",
+      "displayName": "ho513"
+    },
+    {
+      "id": "k1xyYWBQP",
+      "email": "freehjj@gmail.com",
+      "password": "1111",
+      "displayName": "freehjj"
+    },
+    {
+      "id": "E4jUkwcnF",
+      "email": "dael@naver.com",
+      "password": "$2b$10$dWqfredspiNxpuXJa7k.Zesd9g6CnIPLQOW4ebdRdgkPNpm4A7s7S",
+      "displayName": "ho513"
+    }
+  ],
+  "topics": [
+    {
+      "id": "_kVkqbNfP",
+      "title": "CSS",
+      "description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.",
+      "user_id": "wPumwLIEb"
+    },
+    {
+      "id": "VtKgSysJw",
+      "title": "HTML5",
+      "description": "<a href=\"https://www.w3.org/TR/html5/\" target=\"_blank\" title=\"html5 speicification\">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.\r\n</p><p style=\"margin-top:45px;\">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.",
+      "user_id": "wPumwLIEb"
+    },
+    {
+      "id": "Lw6kChTZS",
+      "title": "JavaScript",
+      "description": "JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.",
+      "user_id": "k1xyYWBQP"
+    }
+  ]
+}
